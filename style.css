@@ -1,30 +1,33 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some basic elements */
+body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray background for a soft look */
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header Styles */
+/* Header styling */
 header {
-    background: #ff69b4; /* Hot pink */
+    background-color: #f8a5c2; /* Light pink background */
     color: #fff;
-    padding: 10px 0;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+}
+
+/* Navigation styling */
+nav {
+    margin: 1rem 0;
 }
 
 nav ul {
@@ -34,7 +37,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
@@ -47,49 +50,30 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Section Styles */
-section {
-    padding: 20px 0;
-    background-color: #e0f8e0; /* Light green */
-    border-bottom: 2px solid #d0f0d0; /* Slightly darker green for borders */
+/* Main section styling */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-section h2 {
-    border-bottom: 2px solid #ff69b4; /* Hot pink */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #333;
+h2 {
+    color: #2ecc71; /* Green for subheadings */
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* Footer Styles */
-footer {
-    background: #ff69b4; /* Hot pink */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+h3 {
+    color: #ff6f61; /* Coral pink for section titles */
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-footer p {
-    margin: 0;
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
-/* Lists and Links */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #ff69b4; /* Hot pink for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+/* Button styling */
+button {
+    background-color: 
