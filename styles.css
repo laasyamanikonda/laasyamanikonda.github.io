@@ -61,7 +61,7 @@ main {
 }
 
 h2 {
-    color: #2ecc71; /* Green for subheadings */
+    color: #fff; /* Green for subheadings */
     font-size: 2rem;
     margin-bottom: 1rem;
         text-align: center;
