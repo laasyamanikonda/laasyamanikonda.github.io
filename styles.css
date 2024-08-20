@@ -89,7 +89,7 @@ section {
 /* Footer Styles */
 footer {
     background-color: #d36c77; /* Soft pink background for the footer */
-    color: #fff; /* White text in the footer */
+    color: #000000; /* black text in the footer */
     text-align: center; /* Center align text in footer */
     padding: 10px;
     border-top: 1px solid #a65c9c; /* Purple border at the top of the footer */
