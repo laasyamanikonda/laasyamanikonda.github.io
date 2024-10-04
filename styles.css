@@ -94,4 +94,113 @@ footer {
     padding: 10px;
     border-top: 1px solid #a65c9c; /* Purple border at the top of the footer */
 }
+#sidebar {
+  font-family: "Helvetica";
+  background: #DDD;
+  width: 230px;
+  display: block;
+  position: absolute;
+  left: -230px;
+  top: 0px;
+  transition: left 0.3s linear;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
+#sidebar.visible {
+  left: 0px;
+  transition: left 0.3s linear;
+}
+
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+}
+
+#sidebar-btn span {
+  height: 1.5px;
+  background: #111;
+  margin-bottom: 6px;
+  display: block;
+}
+
+#sidebar-btn span:nth-child(2) {
+  width: 75%
+}
+
+#sidebar-btn span:nth-child(3) {
+  width: 50%
+}
+
+
+#sideclose-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: -13px;
+  right: -60px;
+  visibility: hidden;
+  font-size: 30px;
+}
+
+
+
+/*set style for buttons*/
+
+.button {
+  border-radius: 1px;
+  display: block;
+  background-color: #DDD;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  transition: 0.5s;
+  color: white;
+}
+
+.button:hover {
+  background-color: #6547b1;
+  color: white;
+  transition: 0s;
